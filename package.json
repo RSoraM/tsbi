@@ -1,7 +1,19 @@
 {
   "name": "tsbi",
   "version": "1.0.0",
-  "description": "",
+  "description": "tsbi 是一个使用 TypeScript 实现的大数运算库，可在各种环境上启用公钥加密。",
+  "author": "RSM <RSoraM@hotmail.com>",
+  "homepage": "https://github.com/RSoraM/tsbi",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:RSoraM/tsbi.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "tsbi",
+    "TypeScript",
+    "BigIntegers"
+  ],
   "type": "module",
   "exports": {
     ".": {
@@ -24,13 +36,6 @@
     "prepublishOnly": "nr build",
     "publish": "publish"
   },
-  "keywords": [
-    "tsbi",
-    "TypeScript",
-    "BigIntegers"
-  ],
-  "author": "RSM <RSoraM@hotmail.com>",
-  "license": "MIT",
   "devDependencies": {
     "@antfu/ni": "^0.20.0",
     "@vitest/ui": "^0.29.2",
