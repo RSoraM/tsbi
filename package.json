@@ -1,0 +1,44 @@
+{
+  "name": "tsbi",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./src/index.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "release": "standard-version && npm publish",
+    "test": "vitest --ui",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "nr build",
+    "publish": "publish"
+  },
+  "keywords": [
+    "tsbi",
+    "TypeScript",
+    "BigIntegers"
+  ],
+  "author": "RSM <RSoraM@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@antfu/ni": "^0.20.0",
+    "@vitest/ui": "^0.29.2",
+    "git-cz": "^4.9.0",
+    "prettier": "^2.8.4",
+    "standard-version": "^9.5.0",
+    "typescript": "^4.9.5",
+    "unbuild": "^1.1.2",
+    "vitest": "^0.29.2"
+  }
+}
