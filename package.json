@@ -29,7 +29,9 @@
   ],
   "scripts": {
     "dev": "unbuild --stub",
-    "build": "unbuild",
+    "build": "unbuild && git add dist/*",
+    "commit": "git-cz",
+    "push": "git push -u origin master",
     "release": "standard-version && npm publish",
     "test": "vitest --ui",
     "typecheck": "tsc --noEmit",
