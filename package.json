@@ -31,7 +31,7 @@
     "dev": "unbuild --stub",
     "build": "unbuild && git add dist/*",
     "commit": "git-cz",
-    "push": "git push -u origin master",
+    "push": "git push -u origin main",
     "release": "standard-version && npm publish",
     "test": "vitest --ui",
     "typecheck": "tsc --noEmit",
